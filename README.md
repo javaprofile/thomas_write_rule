@@ -1,6 +1,6 @@
 # thomas_write_rule
 **STREAMLINING TRANSACTION COMMIT FOR DISTRIBUTED DATABASES WITH THOMAS'S WRITE RULE**
-* Author: Vipul Reddy
+* Author: Vipul Kumar Bondugula
 * Published In : International Journal For Multidisciplinary Research (IJFMR)
 * Publication Date: 08-2023
 * E-ISSN: 2852-2160
@@ -48,7 +48,7 @@ Enabled more resilient concurrency management in environments with heavy write c
 
 **Citation** \
 STREAMLINING TRANSACTION COMMIT FOR DISTRIBUTED DATABASES WITH THOMAS'S WRITE RULE
-* Vipul R 
+* Vipul Kumar Bondugula
 * International Journal For Multidisciplinary Research 
 * E-ISSN 2852-2160
 * License \
@@ -56,7 +56,7 @@ This research is shared for a academic and research purposes. For commercial use
 **Resources** \
 https://www.ijfmr.com/ \
 **Author Contact** \
-**LinkedIn**: http://linkedin.com/in/Please add here | **Email**: please keep email id @gmail.com
+**LinkedIn**: https://www.linkedin.com/in/vipul-b-18468a19/ | **Email**: vipulreddy574@gmail.com
 
 
 
