@@ -1,5 +1,5 @@
 # thomas_write_rule
-** STREAMLINING TRANSACTION COMMIT FOR DISTRIBUTED DATABASES WITH THOMAS'S WRITE RULE **
+**STREAMLINING TRANSACTION COMMIT FOR DISTRIBUTED DATABASES WITH THOMAS'S WRITE RULE**
 * Author: Vipul Reddy
 * Published In : International Journal For Multidisciplinary Research (IJFMR)
 * Publication Date: 08-2023
