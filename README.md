@@ -9,52 +9,52 @@
 
 **Abstract:**\
 This paper addresses performance degradation in database transaction management caused by high abort rates under Basic Timestamp Ordering (BTO). It examines how strict timestamp-based conflict resolution leads to frequent transaction rollbacks, increased retries, and wasted computation in high-contention and long-running transaction environments. The study emphasizes the limitations of BTO, including rigid conflict handling, timestamp management overhead, and the lack of effective deadlock resolution in distributed systems. By incorporating Thomas’s Write Rule, the proposed approach allows obsolete write operations to be safely ignored, thereby reducing unnecessary aborts while preserving serializability. The paper highlights the need for enhanced timestamp-based concurrency control mechanisms to improve scalability, throughput, and efficiency in high-volume database systems.
-This paper addresses performance degradation in database transaction management caused by high retry counts under fixed timeout strategies in Snapshot Isolation. It examines how predefined timeout values fail to adapt to dynamic workload conditions, leading to premature transaction aborts, excessive retries, and reduced throughput in high-contention environments. The study emphasizes the role of dynamic timeout mechanisms that adjust waiting periods based on system state and transaction behavior to improve efficiency. By learning from prior executions and estimating appropriate completion windows, the proposed approach reduces unnecessary retries and lowers latency across varying node configurations. The paper highlights the need for adaptive, context-aware timeout management to enhance scalability and performance in concurrent database systems.
 
 **Key Contributions:**
-* **Retry Count Reduction:**\
-Analyzed performance limitations of fixed timeout strategies in Snapshot Isolation that lead to excessive transaction retries under high contention.
+* **Abort Rate Mitigation:**\
+Investigated the limitations of Basic Timestamp Ordering that result in frequent transaction aborts under high contention and long-running workloads.
 
-* **Adaptive Timeout Management:**\
-Designed and evaluated dynamic timeout mechanisms that adjust waiting periods based on workload conditions and transaction behavior.
+* **Timestamp-Based Optimization:**\
+Applied Thomas’s Write Rule to relax strict write conflict handling, allowing obsolete writes to be ignored without violating serializability.
   
-* **Performance Evaluation:** \
-  Compared fixed and dynamic timeout approaches across multiple node configurations, demonstrating reduced retry counts, lower latency, and improved throughput.
+* **Experimental Assessment:** \
+  Evaluated the impact of the proposed approach across varying workload intensities, demonstrating reduced aborts, fewer retries, and improved throughput.
   
-* **Research Leadership:**\
-  Led the study and implementation focusing on improving transaction efficiency and scalability through intelligent timeout control in concurrent database systems.
+* **Scholarly Leadership:**\
+  Directed the analysis and implementation focused on enhancing scalability and efficiency of timestamp-based concurrency control mechanisms.
 
 **Relevance & Real-World Impact**
-* **Improved Transaction Throughput:**\
-Enhanced system efficiency by minimizing unnecessary retries and premature aborts in Snapshot Isolation–based database systems.
+* **Enhanced System Efficiency:**\
+Improved transaction completion rates by minimizing unnecessary rollbacks in timestamp-ordered database systems.
 
-* **Scalable Concurrency Handling:**\
-Enabled better adaptation to dynamic workloads and contention levels through context-aware timeout management.
+* **Better Handling of High Contention:**\
+Enabled more resilient concurrency management in environments with heavy write conflicts and long-running transactions.
 
-* **System Performance Improvement :** \
-    Reduced computational overhead and transaction latency in high-volume environments by optimizing timeout strategies.
-* **Academic & Research Impact:** \
-    Supports ongoing research and educational work in transaction management, concurrency control, and adaptive performance optimization in database systems.
+* **Overall Performance Gains :** \
+    Reduced wasted computation and execution delays, leading to lower latency and improved system throughput.
+  
+* **Academic and Educational Value:** \
+    Provides a strong foundation for further research and teaching in concurrency control, transaction scheduling, and distributed database systems.
 
 **Experimental Results (Summary)**:
 
-  | Nodes | Retry Count (Fixed Timeout) | Retry Count (Dynamic Timeout) | Reduction (%)   |
-  |-------|-----------------------------| ------------------------------| ----------------|
-  | 3     |  2.1                        | 1.1                           | 47.62           |
-  | 5     |  3.4                        | 1.5                           | 55.88           |
-  | 7     |  4.6                        | 2.0                           | 56.52           |
-  | 9     |  5.3                        | 2.7                           | 49.06           |
-  | 11    |  6.0                        | 3.1                           | 48.33           |
+  | Nodes | Basic Timestamp Ordering BTO | Thomas Write Rule TWR   | Reduction (%)   |
+  |-------|------------------------------| ------------------------| ----------------|
+  | 3     |  4                           | 2                       | 50.00           |
+  | 5     |  10                          | 5                       | 50.00           |
+  | 7     |  18                          | 8                       | 55.56           |
+  | 9     |  27                          | 11                      | 59.26           |
+  | 11    |  39                          | 14                      | 64.10           |
 
 **Citation** \
-MANAGING TRANSACTIONS IN SNAPSHOT ISOLATION WITH ADAPTIVE TIMEOUTS
+STREAMLINING TRANSACTION COMMIT FOR DISTRIBUTED DATABASES WITH THOMAS'S WRITE RULE
 * Vipul R 
-* International Journal of Innovative Research in Engineering & Multidisciplinary Physical Sciences 
-* E-ISSN 2349-7300 
+* International Journal For Multidisciplinary Research 
+* E-ISSN 2852-2160
 * License \
 This research is shared for a academic and research purposes. For commercial use, please contact the author.\
 **Resources** \
-https://www.ijirmps.org/ \
+https://www.ijfmr.com/ \
 **Author Contact** \
 **LinkedIn**: http://linkedin.com/in/Please add here | **Email**: please keep email id @gmail.com
 
