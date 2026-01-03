@@ -1,11 +1,13 @@
-# thomas_write_rule
-**STREAMLINING TRANSACTION COMMIT FOR DISTRIBUTED DATABASES WITH THOMAS'S WRITE RULE**
-* Author: Vipul Kumar Bondugula
-* Published In : International Journal For Multidisciplinary Research (IJFMR)
-* Publication Date: 08-2023
-* E-ISSN: 2852-2160
-* Impact Factor: 9.24
-* Link:
+# Thomas Write Rule
+**Streamlining Transaction Commit For Distributed Databases With Thomas's Write Rule**
+
+### Paper Information
+- **Author(s):** Vipul Kumar Bondugula
+- **Published In:** International Journal For Multidisciplinary Research (IJFMR)
+- **Publication Date:** Aug 2023
+- **ISSN:** E-ISSN 2852-2160
+- **DOI:**
+- **Impact Factor:** 9.24
 
 **Abstract:**\
 This paper addresses performance degradation in database transaction management caused by high abort rates under Basic Timestamp Ordering (BTO). It examines how strict timestamp-based conflict resolution leads to frequent transaction rollbacks, increased retries, and wasted computation in high-contention and long-running transaction environments. The study emphasizes the limitations of BTO, including rigid conflict handling, timestamp management overhead, and the lack of effective deadlock resolution in distributed systems. By incorporating Thomas’s Write Rule, the proposed approach allows obsolete write operations to be safely ignored, thereby reducing unnecessary aborts while preserving serializability. The paper highlights the need for enhanced timestamp-based concurrency control mechanisms to improve scalability, throughput, and efficiency in high-volume database systems.
